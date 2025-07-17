@@ -3,9 +3,211 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio Websitet</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <h1>Portfolio Website</h1>
+  <body class="text-gray-900">
+    <header class="bg-blue-300 text-white font-bold p-5 relative shadow-lg">
+      <h1 class="sm:text-2xl md:text-3xl text-center mb-0 font-bold">
+        Portfolio Website
+      </h1>
+      <div class="mb-3">
+        <nav class="font-size-xl absolute right-4 space-x-6">
+          <a class="hover:text-gray-500 delay-400" href="#index">Home</a>
+          <a class="hover:text-gray-500 delay-400" href="#about">About</a>
+          <a class="hover:text-gray-500 delay-400" href="#projects">Projects</a>
+          <a class="hover:text-gray-500 delay-400" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section id="home" class="flex flex-col p-8 items-center justify-center">
+      <img
+        class="w-32 h-32 border-4 border-blue-200 rounded-full shadow-lg"
+        src="./profile-img.png"
+        alt="Photo"
+      />
+      <h2 class="font-bold text-xl mt-3 mb-1">SRIMATHI P</h2>
+      <h2 class="font-semibold text-lg">Web Developer</h2>
+      <p class="mt-3 mb-3 text-2xl font-bold">
+        Crafting clean code & creative designs.
+      </p>
+      <a
+        href=""
+        class="bg-blue-300 hover:bg-blue-400 delay-100 text-white font-bold px-4 py-2 m-3 rounded"
+      >
+        Download Resume
+      </a>
+    </section>
+
+    <section
+      id="about"
+      class="flex flex-col items-center justify-center p-6 md:flex-row md:gap-10 bg-gray-100 py-12 px-6"
+    >
+      <div class="max-w-6xl mx-auto">
+        <!-- Title -->
+        <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
+
+        <!-- Bio Section -->
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Left: Paragraph -->
+          <div
+            class="bg-white rounded-lg p-6 shadow shadow-md border-2 hover:border-blue-200 hover:scale-105 hover:shadow-lg"
+          >
+            <p class="mb-4">
+              Hello! I’m a passionate web developer with a strong background in
+              front-end technologies. I love building clean, user-friendly
+              interfaces and continuously improving my skills.
+            </p>
+            <p>
+              My goal is to work on meaningful projects and grow as a full-stack
+              developer while creating impact through technology.
+            </p>
+          </div>
+
+          <!-- Right: Skills List -->
+          <div
+            class="bg-white rounded-lg p-6 shadow shadow-md border-2 hover:border-blue-200 hover:scale-105 hover:shadow-lg"
+          >
+            <h3 class="text-xl font-semibold mb-4">Key Skills</h3>
+            <ul class="list-disc list-inside space-y-1">
+              <li>HTML5 & CSS3</li>
+              <li>JavaScript (ES6+)</li>
+              <li>Tailwind CSS</li>
+              <li>React (Basic)</li>
+              <li>Java</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Timeline Section -->
+        <div class="mt-12">
+          <h3 class="text-2xl font-semibold mb-4 text-center">
+            Education & Experience
+          </h3>
+          <div class="grid md:grid-cols-2 gap-6">
+            <!-- Education -->
+            <div
+              class="bg-white rounded-lg p-6 shadow shadow-md border-2 hover:border-blue-200 hover:scale-105 hover:shadow-lg"
+            >
+              <h4 class="font-bold text-lg mb-2">Education</h4>
+              <ul class="list-disc list-inside">
+                <li>B.Tech in Computer Science and Business Systems</li>
+              </ul>
+            </div>
+
+            <!-- Experience -->
+            <div
+              class="bg-white rounded-lg p-6 shadow shadow-md border-2 hover:border-blue-200 hover:scale-105 hover:shadow-lg"
+            >
+              <h4 class="font-bold text-lg mb-2">Experience</h4>
+              <ul class="list-disc list-inside">
+                <li>Web Development Intern - CognoRise InfoTech</li>
+                <li>Freelance Projects (2023 - Present)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <h2 class="text-3xl font-bold text-center mt-8 mb-8">Projects</h2>
+    <section
+      id="projects"
+      class="flex flex-col items-center justify-center p-6 md:flex-row md:gap-10 w-full p-2 bg-gray-100"
+    >
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 max-w-7xl mx-auto rounded"
+      >
+        <div
+          class="bg-white p-4 rounded shadow-md border-2 hover:border-blue-200 hover:scale-105 hover:shadow-lg"
+        >
+          <h3 class="text-xl font-semibold mb-2">
+            Sign Language to Text Converter
+          </h3>
+          <p class="text-gray-600 mb-2">
+            Translates Indian Sign Language gestures into text and speech to
+            support inclusive communication.
+          </p>
+          <p class="text-sm text-gray-500 mb-2">
+            Tech Used: HTML, JS, TensorFlow, Tailwind
+          </p>
+        </div>
+        <div
+          class="bg-white p-4 rounded shadow-md border-2 hover:border-blue-200 hover:scale-105 hover:shadow-lg"
+        >
+          <h3 class="text-xl font-semibold mb-2">Video Conferencing Web App</h3>
+          <p class="text-gray-600 mb-2">
+            Real-time video meetings with summarization, attendance tracking,
+            and multilingual speech translation.
+          </p>
+          <p class="text-sm text-gray-500 mb-2">
+            Tech Used: HTML, JS, WebRTC, NLP (spaCy), Tailwind
+          </p>
+        </div>
+        <div
+          class="bg-white p-4 rounded shadow-md border-2 hover:border-blue-200 hover:scale-105 hover:shadow-lg"
+        >
+          <h3 class="text-xl font-semibold mb-2">Smart Waste Bin</h3>
+          <p class="text-gray-600 mb-2">
+            AI-powered bin that classifies bio/non-biodegradable waste and
+            grinds bio-waste for composting.
+          </p>
+          <p class="text-sm text-gray-500 mb-2">
+            Tech Used: Sensors, AI Classifier, Embedded Systems, Tailwind
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="bg-gray-100 py-12 px-6">
+      <div class="max-w-2xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+        <form
+          class="bg-white p-6 rounded-lg shadow-md space-y-4 shadow-md border-2 hover:border-blue-200 hover:scale-105 hover:shadow-lg"
+        >
+          <div>
+            <label for="name" class="block text-left font-medium">Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Your Name"
+              class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300"
+            />
+          </div>
+          <div>
+            <label for="email" class="block text-left font-medium">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Your Email"
+              class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300"
+            />
+          </div>
+          <div>
+            <label for="message" class="block text-left font-medium"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              rows="4"
+              placeholder="Your Message"
+              class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+    <footer class="bg-gray-800 text-white py-6 text-center">
+      © 2025 srimathi. All rights reserved.
+    </footer>
   </body>
 </html>
